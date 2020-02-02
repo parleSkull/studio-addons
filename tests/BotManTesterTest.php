@@ -4,7 +4,6 @@ namespace Tests;
 
 use Mockery as m;
 use BotMan\BotMan\BotMan;
-use phpDocumentor\Reflection\Types\Void_;
 use PHPUnit\Framework\TestCase;
 use BotMan\BotMan\BotManFactory;
 use BotMan\Studio\Testing\BotManTester;
@@ -16,7 +15,6 @@ use BotMan\BotMan\Messages\Attachments\Video;
 use BotMan\BotMan\Messages\Outgoing\Question;
 use BotMan\BotMan\Messages\Attachments\Location;
 use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
-use SebastianBergmann\Type\VoidType;
 
 class TemplateFake
 {

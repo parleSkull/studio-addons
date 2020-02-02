@@ -14,9 +14,7 @@ class Composer extends BaseComposer
      */
     public function install($package, callable $callback)
     {
-        $process = $this->getProcess();
-
-        $process->setCommandLine(trim($this->findComposer().' require '.$package));
+        $process = $this->getProcess([$this->findComposer(), 'require', $package]);
 
         $process->run($callback);
 
